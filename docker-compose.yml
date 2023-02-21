@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  ansible:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /Users/slackoverflow/.ssh:/root/.ssh
+      - $PWD/../ansible:/workspace/ansible
+    command: tail -f /dev/null
+    environment:
+      - ANSIBLE_INVENTORY=/workspace/ansible/inventory
