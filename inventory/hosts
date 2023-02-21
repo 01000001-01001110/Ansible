@@ -1,0 +1,1 @@
+blog ansible_user=xxx ansible_host=xxx.xxx.xxx.xxx ansible_python_interpreter=/usr/bin/python3
